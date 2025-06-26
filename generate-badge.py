@@ -1,12 +1,11 @@
-# generate-badge.py
 import re
 
 def get_progress():
     with open("README.md", "r") as file:
         content = file.read()
     
-    total = len(re.findall(r"- \[( |x)\] ", content))
-    done = len(re.findall(r"- \[x\] ", content))
+    total = len(re.findall(r"- \[( |x)\]", content))
+    done = len(re.findall(r"- \[x\]", content))
     percent = int((done / total) * 100) if total else 0
 
     color = (
@@ -26,6 +25,8 @@ def get_progress():
 
     with open("README.md", "w") as file:
         file.write(updated)
+
+    print(f"✔ Badge updated: {percent}% complete")
 
 if __name__ == "__main__":
     get_progress()
