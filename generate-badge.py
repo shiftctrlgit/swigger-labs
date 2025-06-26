@@ -3,14 +3,13 @@ import re
 def get_progress():
     with open("README.md", "r") as file:
         content = file.read()
-    
-    # Show all checkbox lines detected
+
     all_checkboxes = re.findall(r"- \[( |x)\]", content)
     checked = re.findall(r"- \[x\]", content)
-    
-    print(f"🔍 Total checkboxes found: {len(all_checkboxes)}")
-    print(f"✅ Boxes checked: {len(checked)}")
-    print(f"⛳ Matches found: {checked}")
+
+    print(f"🔍 Total checkboxes found: {len(all_checkboxes)}", flush=True)
+    print(f"✅ Boxes checked: {len(checked)}", flush=True)
+    print(f"⛳ Matches found: {checked}", flush=True)
 
     total = len(all_checkboxes)
     done = len(checked)
@@ -24,7 +23,7 @@ def get_progress():
     )
 
     badge_url = f"https://img.shields.io/badge/CSRF%20Study-{percent}%25-{color}"
-    print(f"📊 New badge URL: {badge_url}")
+    print(f"📊 New badge URL: {badge_url}", flush=True)
 
     updated = re.sub(
         r"!\[Progress\]\(.*?\)",
@@ -33,9 +32,4 @@ def get_progress():
     )
 
     with open("README.md", "w") as file:
-        file.write(updated)
-
-    print(f"✔ Badge updated to {percent}%")
-
-if __name__ == "__main__":
-    get_progress()
+        file.writ
