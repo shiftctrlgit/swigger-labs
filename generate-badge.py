@@ -5,8 +5,8 @@ def get_progress():
     with open("README.md", "r") as file:
         content = file.read()
     
-    total = len(re.findall(r"- ( |x) ", content))
-    done = len(re.findall(r"- x ", content))
+    total = len(re.findall(r"- \[( |x)\] ", content))
+    done = len(re.findall(r"- \[x\] ", content))
     percent = int((done / total) * 100) if total else 0
 
     color = (
@@ -19,7 +19,7 @@ def get_progress():
     badge_url = f"https://img.shields.io/badge/CSRF%20Study-{percent}%25-{color}"
 
     updated = re.sub(
-        r"!Progress.*?",
+        r"!\[Progress\]\(.*?\)",
         f"![Progress]({badge_url})",
         content
     )
