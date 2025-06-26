@@ -7,7 +7,7 @@ The **goal** is to:
 -Deepen my understanding of the material  
 -Break down complex topics into my own words  
 -Document key takeaways  
--Build personal reference I can revisit or share with others   
+-Build a personal reference I can revisit or share with others   
 
 These notes are **my interpretations and reflections** and may differ from official explanations. For authoritative material please refer directly yo PortSwigger Website
 
