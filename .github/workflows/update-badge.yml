@@ -28,4 +28,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           git commit -m "Update CSRF progress badge" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
