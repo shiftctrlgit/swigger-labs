@@ -33,7 +33,7 @@ These notes are **my interpretations and reflections** and may differ from offic
 - [x] Read: CSRF tokens
 - [x] Lab: Token not validated
 - [x] Lab: Token duplicated in cookie
-- [x] Lab: Token tied to non-session cookie
+- [ ] Lab: Token tied to non-session cookie
 - [ ] Read: SameSite cookies
 - [ ] Lab: CSRF with no Referer and no token
 - [ ] Read: Bypassing Referer validation
