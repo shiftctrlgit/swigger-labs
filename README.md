@@ -11,7 +11,7 @@ The **goal** is to:
 
 These notes are **my interpretations and reflections** and may differ from official explanations. For authoritative material please refer directly yo PortSwigger Website
 
-![Progress](https://img.shields.io/badge/CSRF%20Study-0%25-red)
+![Progress](https://img.shields.io/badge/CSRF%20Study-42%25-yellow)
 
 ### ✅ Current Focus
 *Module:* [CSRF Vulnerabilities](https://portswigger.net/web-security/csrf)  
