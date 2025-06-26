@@ -13,7 +13,7 @@ These notes are **my interpretations and reflections** and may differ from offic
 
 ---
 
-![Progress](https://img.shields.io/badge/CSRF%20Study-25%25%20complete-yellowgreen)  
+![Progress](https://img.shields.io/badge/CSRF%20Study-0%25-red)  
 
 
 ### ✅ Current Focus
@@ -31,13 +31,13 @@ These notes are **my interpretations and reflections** and may differ from offic
 ### 🔬 CSRF Labs Progress
 
 - [x] Read: CSRF vulnerabilities overview
-- [x] Lab: CSRF in transferring money
-- [x] Lab: CSRF with broken Referer validation
-- [x] Read: CSRF tokens
-- [x] Lab: Token not validated
-- [x] Lab: Token duplicated in cookie
-- [x] Lab: Token tied to non-session cookie
-- [x] Read: SameSite cookies
+- [ ] Lab: CSRF in transferring money
+- [ ] Lab: CSRF with broken Referer validation
+- [ ] Read: CSRF tokens
+- [ ] Lab: Token not validated
+- [ ] Lab: Token duplicated in cookie
+- [ ] Lab: Token tied to non-session cookie
+- [ ] Read: SameSite cookies
 - [ ] Lab: CSRF with no Referer and no token
 - [ ] Read: Bypassing Referer validation
 - [ ] Lab: CSRF with token in Referer header
